@@ -48,7 +48,7 @@ if(un.equals(usernamedata)    &&   p ==(pasworddata))
 
                     try {
                         Class.forName("com.mysql.jdbc.Driver");
-                        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/siva", "root", "@Sivanu1998");
+                        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/siva", "root", "12345678");
                         Statement stmt = con.createStatement();
                         ResultSet rs = stmt.executeQuery("select *from lecdetail");
 
@@ -112,7 +112,7 @@ if(un.equals(usernamedata)    &&   p ==(pasworddata))
                     }
                     try {
                         Class.forName("com.mysql.jdbc.Driver");
-                        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/siva", "root", "@Sivanu1998");
+                        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/siva", "root", "12345678");
                         Statement stmt = con.createStatement();
 
                         int rs = stmt.executeUpdate("insert into studetail(name,username,password,age,course) values('" + na + "','" + un + "','" + p + "'," + a + ",'" + ss + "')");
